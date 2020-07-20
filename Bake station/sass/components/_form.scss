@@ -1,0 +1,114 @@
+.form {
+
+    &_group:not(:last-child) {
+        margin-bottom: 2rem;
+        
+
+
+    }
+
+    &_input {
+        font-size: 1.6rem;
+        padding: 1.5rem 2rem;
+        border-radius: 2px;
+        background-color: #DEB887 ;
+        border: none;
+        font-family: initial;
+        color: initial;
+        border-bottom: 3px solid transparent;
+        width: 90%;
+        display: block;
+        transition: all .3s;
+
+        &:focus {
+            outline: none;
+            box-shadow: 0 1rem 2rem rgba($color-black, $alpha: .1);
+            border-bottom: 5px solid $color-Chartreuse;
+        }
+
+        &:focus:invalid {
+            border-bottom: 5px solid $color-Crimson;
+        }
+    
+
+        &::-webkit-input-placeholder {
+            color:$color-grey;
+        }
+
+
+    }
+
+    
+    &_label {
+        font-size: 1.4rem;
+        color: red;
+        font-weight: 700;
+        margin-left: 1em;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+
+    }
+
+    &_input:placeholder-shown + &_label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+
+    }
+
+    &_radio-group {
+        width: 49%;
+        display: inline-block;
+
+    }
+
+    &_radio-input {
+        display: none;
+    }
+
+    &_radio-label {
+        font-size: 2rem;
+        cursor: pointer;
+        position: relative;
+        padding-left: 5rem;
+
+    }
+
+    &_radio-button {
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid $color-Crimson;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1.1rem;
+            width: 1.1rem;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: $color-Crimson;
+            opacity: 0;
+            transition: opacity .2s;
+
+
+        }
+
+    }
+
+    &_radio-input:checked ~ &_radio-label &_radio-button::after {
+        opacity: 1;
+    }
+
+    
+
+    
+}
