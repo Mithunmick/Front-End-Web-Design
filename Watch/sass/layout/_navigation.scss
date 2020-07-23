@@ -1,0 +1,32 @@
+.navigation {
+    &_list {
+     list-style-type: none;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+     background-color: none;
+     position: relative;
+    
+     
+    }
+
+    &_item {
+        float: left;
+
+
+         
+    }
+
+    &_link {
+
+        border-radius: 40px;
+        background: linear-gradient(145deg, #dbcf4b, #fff659);
+        box-shadow:  34px 34px 55px #b1a83d, 
+             -34px -34px 55px #ffff69;
+        display: block;
+       
+       text-align: center;
+       padding: 14px 16px;
+      text-decoration: none;
+    }
+}

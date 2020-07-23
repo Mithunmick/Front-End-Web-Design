@@ -1,0 +1,28 @@
+.header {
+    height: 100vh;
+    background-image: url(../img/pic1.jpg);
+    background-size: cover;
+    background-position: center;
+
+    
+
+    &_logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &_logo{
+        height: 10rem;
+    }
+
+    &_text-box{
+        position: absolute;
+        top : 40%;
+        left : 30%;
+        transform : translate(-50% ,-50%);
+        text-align : center;
+        z-index: 1000;
+    }
+  
+}
