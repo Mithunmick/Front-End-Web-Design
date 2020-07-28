@@ -1,20 +1,9 @@
 .header {
     height: 100vh;
-    background-image: url(../img/pic1.jpg);
-    background-size: cover;
-    background-position: center;
+    background-color:#f7f7f7;
 
     
 
-    &_logo-box {
-        position: absolute;
-        top: 4rem;
-        left: 4rem;
-    }
-
-    &_logo{
-        height: 10rem;
-    }
 
     &_text-box{
         position: absolute;
@@ -23,6 +12,11 @@
         transform : translate(-50% ,-50%);
         text-align : center;
         z-index: 1000;
+    }
+
+    &_composition {
+        position: relative;
+        padding: 40rem;
     }
   
 }

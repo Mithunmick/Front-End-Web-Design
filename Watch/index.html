@@ -11,38 +11,71 @@
 
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="Shortcut icon" type="image/jpg" href="img/logotransparent.png">
+        <script src="all.min.js"></script>
 
         <title>Mick E Watch | Home of smart Watch</title>
     </head>
+
     <body>
-        <div class="navigation">
-            <nav class="navigation_nav">
-                <ul class="navigation_list">
-                    <li class="navigation_item"><a href="#" class="navigation_link">Home</a></li>
-                    <li class="navigation_item"><a href="#" class="navigation_link">Products</a></li>
-                    <li class="navigation_item"><a href="#" class="navigation_link">Offers</a></li>
-                    <li class="navigation_item"><a href="#" class="navigation_link">About Us</a></li>
-                    <li class="navigation_item"><a href="#" class="navigation_link">Book Now</a></li>
-                </ul>
-            </nav>
+      <div class="navigation">
+        <div class="logo">
+          &nbsp;
         </div>
+        <nav >
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">Kinds</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <div class="menu-toggle"><i class="fa fa-bars"></i></div>
+      </div>
+      
+      <script>
+        const btn = document.querySelector('.menu-toggle');		
+        const nav = document.querySelector('nav');
+    
+        btn.addEventListener('click', ()=>{
+    
+          nav.classList.toggle('active');
+        })
+      </script>
+        
         <div class="header">
-            <div class="header_logo-box">
-                 <img src="img/logotransparent.png" alt="logo" class="header_logo">
+          <div class="row">
+            <div class="col_1_of_2">
+              <div class="header_text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--main">Mick E Watch</span>
+                    <span class="heading-primary--sub">Home of smart watch</span>
+                </h1>
+            </div> 
+
+                
+            <div class="col_1_of_2">
+                <div class="composition">
+                    <img src="img/pic1.jpg" alt="Photo1" class="composition_photo composition_photo--p1">
+                    
+                </div>
             </div>
-            <div class="header_text-box">
+        </div>
+            <!-- <div class="header_text-box">
                 <h1 class="heading-primary">
                     <span class="heading-primary--main">Mick E Watch</span>
                     <span class="heading-primary--sub">Home of smart watch</span>
                 </h1>
             </div>
-        </div>
+        </div> -->
 
     </body> 
 
 
 
-    </head>
+
 
 
 
