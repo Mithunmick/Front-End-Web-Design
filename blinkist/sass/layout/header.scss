@@ -1,0 +1,36 @@
+.header {
+    height: 40vh;
+    //background-color: hotpink;
+    display: grid;
+    
+    //grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 25% 1fr 1fr 25%;
+    padding-left: 3rem ;
+    font-family: Poppins;
+
+
+    &_pri {
+        grid-area: 1/2/2/3;
+        font-size: 5rem;
+        line-height: 5rem;
+        padding: 7rem 0;
+
+    }
+
+    &_sub {
+        grid-area: 2/2/3/3;
+        font-size: 1.9rem;
+        font-weight: 300;
+        margin-top: -2.5rem;
+    }
+
+    &_button {
+        grid-area: 3/2/4/3;
+        padding: 3rem 0;
+        cursor: pointer;
+        
+        
+    
+        
+    }
+}

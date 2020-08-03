@@ -1,0 +1,41 @@
+.navigation {
+    height: 7rem;
+    background-color: white;
+    display: grid;
+    
+    //grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 25% 1fr 1fr 25%;
+
+
+    &_logo {
+        padding: .8rem 0;
+        grid-area: 1/2/2/3;
+        cursor: pointer;
+        
+
+        &_img {
+            width: 35%;
+        }
+    }
+
+    &_log {
+        grid-area: 1/3/2/4;
+        justify-self: right;
+        padding: 2rem;
+        cursor: pointer;
+        font-weight: 500;
+        text-decoration: none;
+        color: #03314b;
+
+        &:hover::after {
+            content: "";
+            background-color: greenyellow;
+            display: block;
+            bottom: -3rem;
+            width: 100%;
+            height: .2rem;
+        }
+
+    }
+}
+
