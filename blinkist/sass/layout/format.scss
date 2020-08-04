@@ -1,0 +1,32 @@
+.format {
+    height: 55vh;
+    margin-top: 12rem;
+    background-color: #F1F6F4;
+    //margin-top: 100rem;
+    display: grid;
+    
+    //grid-template-columns: repeat(4,1fr);
+    grid-template-columns: 25% 1fr 1fr 25%;
+    &_header {
+        text-align: center;
+        //margin-top: 12rem;
+        font-size: 3rem;
+        font-weight: 550;
+        font-family: Poppins;
+        grid-area: 1/2/2/4;
+
+        &_pri {
+            padding: 5.5rem 0;
+        }
+    }
+
+    &_img1 {
+        grid-area: 2/2/3/3;
+        background: center;
+        
+        & img {
+            height: 80%;
+        }
+    }
+
+}

@@ -26,7 +26,7 @@
       height: .2rem; }
 
 .header {
-  height: 40vh;
+  height: 35vh;
   display: grid;
   grid-template-columns: 25% 1fr 1fr 25%;
   padding-left: 3rem;
@@ -35,16 +35,53 @@
     grid-area: 1/2/2/3;
     font-size: 5rem;
     line-height: 5rem;
-    padding: 7rem 0; }
+    margin-top: 7rem;
+    font-weight: 550; }
   .header_sub {
     grid-area: 2/2/3/3;
     font-size: 1.9rem;
     font-weight: 300;
-    margin-top: -2.5rem; }
+    margin-top: -8rem;
+    padding: 4rem 0; }
   .header_button {
     grid-area: 3/2/4/3;
     padding: 3rem 0;
-    cursor: pointer; }
+    cursor: pointer;
+    margin-top: -15rem; }
+  .header_img {
+    position: relative;
+    grid-area: 1/2/3/4;
+    z-index: -1;
+    margin-left: 35rem;
+    margin-top: 2rem; }
+  .header_back {
+    background-color: #1775fc;
+    grid-area: 1/4/3/5;
+    max-height: 98.28%;
+    padding-left: 3rem;
+    margin-top: 2rem;
+    z-index: -2;
+    position: relative; }
+
+.format {
+  height: 55vh;
+  margin-top: 12rem;
+  background-color: #F1F6F4;
+  display: grid;
+  grid-template-columns: 25% 1fr 1fr 25%; }
+  .format_header {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 550;
+    font-family: Poppins;
+    grid-area: 1/2/2/4; }
+    .format_header_pri {
+      padding: 5.5rem 0; }
+  .format_img1 {
+    grid-area: 2/2/3/3;
+    background: center; }
+    .format_img1 img {
+      height: 80%; }
 
 body {
   font-family: "Poppinsl", sans-serif;

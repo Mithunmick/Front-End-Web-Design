@@ -1,5 +1,5 @@
 .header {
-    height: 40vh;
+    height: 35vh;
     //background-color: hotpink;
     display: grid;
     
@@ -13,7 +13,8 @@
         grid-area: 1/2/2/3;
         font-size: 5rem;
         line-height: 5rem;
-        padding: 7rem 0;
+        margin-top: 7rem;
+        font-weight: 550;
 
     }
 
@@ -21,16 +22,40 @@
         grid-area: 2/2/3/3;
         font-size: 1.9rem;
         font-weight: 300;
-        margin-top: -2.5rem;
+        margin-top: -8rem ;
+        padding: 4rem 0;
     }
 
     &_button {
         grid-area: 3/2/4/3;
         padding: 3rem 0;
         cursor: pointer;
+        margin-top: -15rem;
+    
         
         
     
         
+    }
+
+    &_img {
+        position: relative;
+        grid-area: 1/2/3/4;
+        z-index: -1;
+        margin-left: 35rem;
+        margin-top: 2rem;
+        
+
+                        
+    }
+    
+    &_back {
+        background-color: #1775fc;
+        grid-area: 1/4/3/5;
+        max-height: 98.28%;
+        padding-left: 3rem;
+        margin-top: 2rem;
+        z-index: -2;
+        position: relative;
     }
 }
