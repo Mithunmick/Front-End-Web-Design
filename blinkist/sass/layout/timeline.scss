@@ -1,0 +1,62 @@
+.timeline {
+    height: 40vh;
+    display: grid;
+    grid-template-columns: 25% 1fr 1fr 25%;
+
+    &_header {
+        text-align: center;
+        padding: 5.5rem 0;
+        font-size: 3rem;
+        font-weight: 550;
+        font-family: Poppins;
+        grid-area: 1/2/2/4;
+        letter-spacing: .1rem;
+    }
+
+    &_timeline {
+        padding: 3rem 0 3rem 0;
+        background-color: #d7e9ff;
+        grid-area: 2/2/3/4;
+        height: 5rem;
+    }
+
+    &_box {
+        padding: 3rem 0 3rem 0;
+        background-color: #d7e9ff;
+        grid-area: 3/2/4/4;
+        height: 10rem;
+        border-radius: .5rem;
+
+        &_text {
+            font-size: 1.5rem;
+            font-family: Poppins;
+
+            &_1 {
+                margin-top: -0.5rem;
+                margin-left: 5rem;
+
+                samp {
+                    font-size: 1.5rem;
+                    font-family: Poppins;
+                    font-weight: 700;
+                    
+                }
+            }
+
+            &_2 {
+                margin-top: .5rem;
+                margin-left: 5rem;
+            }
+
+            
+        }
+    }
+
+    &_button {
+        grid-area: 3/3/4/4;
+        padding: 2.5rem 0 2.5rem 0;
+        margin-left: 12rem;
+    }
+
+    
+}

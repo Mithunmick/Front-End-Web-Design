@@ -14,19 +14,170 @@
         font-weight: 550;
         font-family: Poppins;
         grid-area: 1/2/2/4;
+        letter-spacing: .1rem;
 
         &_pri {
             padding: 5.5rem 0;
         }
     }
 
-    &_img1 {
+    &_img {
+        position: relative;
         grid-area: 2/2/3/3;
-        background: center;
+        padding: 5rem 0 5rem 0;
         
-        & img {
-            height: 80%;
+        
+        &_1 {
+
+          //grid-area: 2/2/3/3;
+          width: 25%;
+          outline: .5rem solid white;
+        
+          border-radius: 2px;
+          position: absolute;
+          margin-top: -5rem;
+          margin-left: 7rem;
+                    
         }
+
+        
     }
+
+    &_img2 {
+        position: relative;
+        grid-area: 2/3/3/4;
+        padding: 5rem 0 5rem 0;
+        
+        &_2 {
+
+          //grid-area: 2/2/3/3;
+          width: 25%;
+          outline: .5rem solid white;
+        
+          border-radius: 2px;
+          position: absolute;
+          margin-top: -5rem;
+          margin-left: -3rem;
+                    
+        }
+
+        
+    }
+
+    &_img3 {
+        position: relative;
+        grid-area: 2/4/3/5;
+        padding: 5rem 0 5rem 0;
+        
+        &_3 {
+
+          //grid-area: 2/2/3/3;
+          width: 25%;
+          outline: .5rem solid white;
+        
+          border-radius: 2px;
+          position: absolute;
+          margin-top: -5rem;
+          margin-left: -14rem;
+                    
+        }
+
+        
+    }
+
+    &_pri {
+        grid-area: 2/2/3/3;
+        font-size: 2.3rem;
+        font-weight: 550;
+        font-family: Poppins;
+        margin-top: 10rem;
+        margin-left: 1rem;
+        padding: 7rem 0 ;
+        letter-spacing: .1rem;
+    }
+    &_pri2 {
+        grid-area: 2/3/3/4;
+        font-size: 2.3rem;
+        font-weight: 550;
+        font-family: Poppins;
+        margin-top: 10rem;
+        margin-left: -7rem;
+        padding: 7rem 0 ;
+        letter-spacing: .1rem;
+    }
+    &_pri3 {
+        grid-area: 2/4/3/5;
+        font-size: 2.3rem;
+        font-weight: 550;
+        font-family: Poppins;
+        margin-top: 10rem;
+        margin-left: -20rem;
+        padding: 7rem 0 ;
+        letter-spacing: .1rem;
+    }
+
+    &_sub {
+        grid-area: 3/2/4/3;
+        font-size: 1.9rem;
+        font-weight: 300;
+        font-family: Poppins;
+        margin-top: -8rem;
+        letter-spacing: .1rem;
+
+        &_1 {
+            margin-left: -.4rem;
+        }
+
+        &_2 {
+            margin-left: 3rem;
+        }
+        &_3 {
+            margin-left: 8rem;
+        }
+
+
+    }
+    &_sub2 {
+        grid-area: 3/3/4/4;
+        font-size: 1.9rem;
+        font-weight: 300;
+        font-family: Poppins;
+        margin-top: -8rem;
+        letter-spacing: .1rem;
+
+        &_1 {
+            margin-left: -12rem;
+        }
+
+        &_2 {
+            margin-left: -10.5rem;
+        }
+        &_3 {
+            margin-left: -6rem;
+        }
+
+
+    }
+    &_sub3 {
+        grid-area: 3/4/4/5;
+        font-size: 1.9rem;
+        font-weight: 300;
+        font-family: Poppins;
+        margin-top: -8rem;
+        letter-spacing: .1rem;
+
+        &_1 {
+            margin-left: -22rem;
+        }
+
+        &_2 {
+            margin-left: -22rem;
+        }
+        
+
+
+    }
+
+    
 
 }
