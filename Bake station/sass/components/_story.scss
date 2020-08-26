@@ -11,6 +11,16 @@
     font-size: $de-size-font;
     transform: skewX(-12deg);
 
+    @include respond(tab-port) {
+         width: 100%;
+         padding: 4rem;
+         padding-left: 7rem;
+    }
+
+    @include respond(phone) {
+        transform: skew(0);
+    }
+
     
 
     &_shape {
@@ -28,6 +38,10 @@
         transform:translateX(-3rem) skewX(12deg) ; 
         position: relative;
 
+        @include respond(phone) {
+            transform: translateX(-3rem) skew(0);
+        }
+
     }
 
     &-img {
@@ -39,6 +53,10 @@
 
     &_text {
         transform: skewX(12deg) ease;
+
+        @include respond(phone) {
+            transform:  skew(0);
+        }
 
     }
 
