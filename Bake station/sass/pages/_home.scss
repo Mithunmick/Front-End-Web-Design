@@ -64,7 +64,13 @@
 
     @include respond(tab-port) {
         padding: 20rem 0;
-        
+        clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -12rem;
+    }
+    @include respond(phone) {
+        padding: 20rem 0;
+        clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 100%);
+        margin-top: -15rem;
     }
 }
 

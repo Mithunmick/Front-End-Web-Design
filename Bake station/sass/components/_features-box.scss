@@ -10,7 +10,11 @@
     @include respond(tab-port) {
         padding: 1.5rem;
     }
-
+    @include respond(phone) {
+        font-size: .7rem;
+    }
+    
+   
 
     &_icon {
         font-size: 6rem;

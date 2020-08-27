@@ -1,16 +1,16 @@
 .header{
-    height: 95vh;
+    height: 100vh;
     background-image: linear-gradient(
         to right bottom ,$color-pri, $color-pri-sub),
         url(../IMG/baking-bread-butter-dough.jpg);
     background-size: cover;
     background-position: center;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    clip-path: polygon(0 0,100% 0, 100% 80%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    clip-path: polygon(0 0,100% 0, 100% 90%, 0 100%);
 
     @include respond(phone) {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
-        clip-path: polygon(0 0,100% 0, 100% 87%, 0 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        clip-path: polygon(0 0,100% 0, 100% 90%, 0 100%);
     }
 
     &_logo-box {
